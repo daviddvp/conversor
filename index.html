@@ -5,26 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" type="text/css">
-    <title>Convertidor de pesetas a euros</title>
+    <title>Convertidor de divisas</title>
 </head>
 <body>
-    <h2>Convertidor de pesetas a euros</h2>
+    <h2>Conversor de divisas</h2>
     <div>
-        <p>Pesetas:</p>
-        <input type="text" class="pesetas"></input>
-        <button class="convertPesetas">Convertir a euros</button>
-        <p>Euros:</p>
-        <p type="text" class="resultado1"></p>
-        <button class="borrarPesetas">Borrar Resultado</button>
+        <p>Importe:</p>
+        <input type="number" class="importe"></input> <!--importe input vacio-->
+        <p>De:</p>
+            <form class="formul">
+            <label for="lang"></label>
+                <select name="moneda1" id="moneda1">
+                    <option value="euros" selected="selected">Euros</option>
+                    <option value="libras">Libras</option>
+                    <option value="dolares">Dolares</option>
+                </select>
+            </form>
+        <p>A:</p>
+        <form class="formul">
+            <label for="lang"></label>
+                <select name="moneda2" id="moneda2">
+                    <option value="euros">Euros</option>
+                    <option value="libras">Libras</option>
+                    <option value="dolares">Dolares</option>
+                </select>
+            </form>
+        <p class="elemento_boton">
+            <button class="convertir">Convertir</button>
+        </p> 
     </div>
-    <div>
-        <p>Euros:</p>
-        <input type="text" class="euros"></input>
-        <button class="convertEuros">Convertir a euros</button>
-        <p>Pesetas:</p>
-        <p type="text" class="resultado2"></p>
-        <button class="borrarEuros">Borrar Resultado</button>
-    </div>
+    <p class="resultado"></p>
     <script src="main.js"></script>
 </body>
 </html>

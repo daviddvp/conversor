@@ -3,6 +3,7 @@
 body { 
     background-color: #2A363B;
 }
+
 h2 {
     color: #FF847c;
     text-align: center;
@@ -10,6 +11,7 @@ h2 {
 }
 
 div {
+  background-color: #99B898;
   width: 100%;
   margin: 10px auto;
   display: flex;
@@ -17,6 +19,7 @@ div {
   justify-content: center;
   align-items: center;
   padding: 10px;
+  box-shadow: 2px 2px 4px 0 #20282c;
 
 }
 
@@ -24,14 +27,15 @@ div input {
   height: 20px;
   margin: 0.5rem;
   border: black 1px solid;
+  border-radius: 7px;
 }
 
 button {
   display: inline-block;
-  color: #fecea8;
+  color: black;
   justify-content: center;
-  background-color: transparent;
-  border: 1px solid #fecea8;  
+  background-color: #BCBCBC;
+  border: 1px solid black;  
   border-radius: 6px;
   text-align: center;
   cursor: pointer;
@@ -44,16 +48,53 @@ button:hover {
 }
 
 p {
-    color: #fff;
+    color: #2A363B;
     margin: 10px 10px;
     
 }
+select{
+  border-radius: 7px;
+}
+.resultado{
+  color: #ffff;
+  text-align: center;
+}
 
-.resultado1, .resultado2 {
-  width: 220px;
-  height: 20px;
-  margin: 10px 10px;
-  background-color: white;
-  color: black;
-  border: black 1px solid;
+/* Maximo tamano 980px de patanlla y en horizontal */
+/* Para moviles */
+@media screen and (max-width: 980px), handheld and (orientation: landscape) {
+  div {
+    /* Con width y heigth en pc hacemos el cuadrado del div */
+    width: 320px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #99B898;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0 #20282c;
+    
+  }
+  div input {
+    height: 20px;
+    margin: 0.5rem;
+    border-radius: 7px;
+    border: black 1px solid;
+  }
+  p {
+    color: #2A363B;
+    margin: 5px 5px; 
+  }
+  button:hover {
+    background-color: #fecea8;
+    color: black;
+  }
+
+  .elemento_boton {
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column;
+  }
 }
