@@ -16,13 +16,13 @@ function case0(){ //Pruebas para el 'case 0'
             break;
         case 1: //De Euros a Libras
             var operacion = roundToTwo(parseFloat(importe * 0.85590));
-            document.querySelector(".resultado").innerHTML = `El importe el Libras es de ${operacion} £`;
+            document.querySelector(".resultado").innerHTML = `El importe en Libras es de ${operacion} £`;
             console.log(parseFloat(input.value)); //Testeo en consola
             console.log("La conversion es de Euros a Libras"); //Testeo en consola
             break;
         case 2: //De Euros a Dolares
             var operacion = roundToTwo(parseFloat(importe * 1.05000));
-            document.querySelector(".resultado").innerHTML = `El importe el Dolares es de ${operacion} $`;
+            document.querySelector(".resultado").innerHTML = `El importe en Dolares es de ${operacion} $`;
             console.log(parseFloat(input.value)); //Testeo en consola
             console.log("La conversion es de Euros a Dolares"); //Testeo en consola
             break;
@@ -38,13 +38,13 @@ function case1(){ //Funcion para el 'case 1'
             console.log("La conversion es de Libras a Euros"); //Testeo en consola
             break;
         case 1: //De Libras a Libras
-            document.querySelector(".resultado").innerHTML = `El importe el Libras es de ${importe} £`;
+            document.querySelector(".resultado").innerHTML = `El importe en Libras es de ${importe} £`;
             console.log(parseFloat(input.value)); //Testeo en consola
             console.log("La conversion es de Libras a Libras"); //Testeo en consola
             break;
         case 2: //De Libras a Dolares
             var operacion = roundToTwo(parseFloat(importe * 1.22600));
-            document.querySelector(".resultado").innerHTML = `El importe el Dolares es de ${operacion} $`;
+            document.querySelector(".resultado").innerHTML = `El importe en Dolares es de ${operacion} $`;
             console.log(parseFloat(input.value)); //Testeo en consola
             console.log("La conversion es de Libras a Dolares"); //Testeo en consola
             break;
@@ -61,12 +61,12 @@ function case2(){ //Funcion para el 'case 2'
             break;
         case 1: //De Dolares a Libras
             var operacion = roundToTwo(parseFloat(importe * 0.81586));
-            document.querySelector(".resultado").innerHTML = `El importe el Libras es de ${operacion} £`;
+            document.querySelector(".resultado").innerHTML = `El importe en Libras es de ${operacion} £`;
             console.log(parseFloat(input.value)); //Testeo en consola
             console.log("La conversion es de Dolares a Libras"); //Testeo en consola
             break;
         case 2: //De Dolares a Dolares
-            document.querySelector(".resultado").innerHTML = `El importe el Dolares es de ${importe} $`;
+            document.querySelector(".resultado").innerHTML = `El importe en Dolares es de ${importe} $`;
             console.log(parseFloat(input.value)); //Testeo en consola
             console.log("La conversion es de Dolares a Dolares"); //Testeo en consola
             break;
