@@ -1,11 +1,11 @@
 let botonConvertir = document.querySelector(".convertir");
 var input = document.querySelector(".importe");
 
-function roundToTwo(num) { //Funcion para redondear los numeros a 2 decimales
+let roundToTwo = num => { //Funcion para redondear los numeros a 2 decimales
     return +(Math.round(num + "e+2")  + "e-2");
 }
 
-function case0(){ //Funcion para el 'case 0'
+let case0 = () =>{ //Funcion para el 'case 0'
     var importe = roundToTwo(input.value);
     switch(document.getElementById('moneda2').selectedIndex){
         case 0: //De Euros a Euros
@@ -39,7 +39,7 @@ function case0(){ //Funcion para el 'case 0'
             break;
     }
 }
-function case1(){ //Funcion para el 'case 1'
+let case1 = () => { //Funcion para el 'case 1'
     var importe = roundToTwo(parseFloat(input.value));
     switch(document.getElementById('moneda2').selectedIndex){
         case 0: //De Libras a Euros
@@ -73,7 +73,7 @@ function case1(){ //Funcion para el 'case 1'
             break;
     }
 }
-function case2(){ //Funcion para el 'case 2'
+let case2 = () => { //Funcion para el 'case 2'
     var importe = roundToTwo(parseFloat(input.value));
     switch(document.getElementById('moneda2').selectedIndex){
         case 0: //De Dolares a Euros
@@ -108,7 +108,7 @@ function case2(){ //Funcion para el 'case 2'
     }
 }
 //Los indices van de 0-1-2 (hay tres en total) 
-function conversionDivisas(){
+let conversionDivisas = () => {
 switch (document.getElementById('moneda1').selectedIndex) {
     case 0: //Euros
         case0(); //Ejecuccion de la funcion del caso 0            
